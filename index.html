@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Management Dashboard</title>
+
+    <!-- Connect CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="logo">🎓 StudentApp</div>
+
+        <nav class="menu">
+            <a href="#" class="active">📊 Dashboard</a>
+            <a href="#students">👨‍🎓 Students</a>
+            <a href="#groups">📚 Classes</a>
+            <a href="#top">🏆 Top Students</a>
+        </nav>
+    </aside>
+
+    <!-- Main content -->
+    <main class="main">
+
+        <header class="header">
+            <div>
+                <h1>Student Dashboard</h1>
+                <p>Welcome to Student Management System</p>
+            </div>
+
+            <div class="profile">👤 Administrator</div>
+        </header>
+
+        <!-- Statistics -->
+        <section class="stats">
+
+            <div class="stat-card">
+                <p>Total Students</p>
+                <h2 id="totalStudents">0</h2>
+            </div>
+
+            <div class="stat-card">
+                <p>Average Score</p>
+                <h2 id="averageScore">0</h2>
+            </div>
+
+            <div class="stat-card">
+                <p>Total Classes</p>
+                <h2 id="totalClasses">0</h2>
+            </div>
+
+        </section>
+
+        <!-- Student list -->
+        <section class="card" id="students">
+
+            <h2>👨‍🎓 Student List</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>No.</th>
+                        <th>Name</th>
+                        <th>Class</th>
+                        <th>Score</th>
+                        <th>Classification</th>
+                    </tr>
+                </thead>
+
+                <tbody id="studentTable"></tbody>
+            </table>
+
+        </section>
+
+        <!-- Class groups -->
+        <section class="card" id="groups">
+
+            <h2>📚 Students by Class</h2>
+
+            <div class="groups" id="classGroups"></div>
+
+        </section>
+
+        <!-- Top students -->
+        <section class="card" id="top">
+
+            <h2>🏆 Top 3 Students</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Name</th>
+                        <th>Class</th>
+                        <th>Score</th>
+                    </tr>
+                </thead>
+
+                <tbody id="topTable"></tbody>
+            </table>
+
+        </section>
+
+    </main>
+
+    <!-- Connect JavaScript -->
+    <script type="module" src="main.js"></script>
+
+</body>
+</html>
